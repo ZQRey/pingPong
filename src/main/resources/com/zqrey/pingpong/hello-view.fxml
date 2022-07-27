@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<Pane fx:id="game_filed" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#onKeyPressed" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zqrey.pingpong.HelloController">
+   <children>
+      <Rectangle fx:id="player" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="78.0" layoutX="14.0" layoutY="14.0" onKeyPressed="#onKeyPressed" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="bot" arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="78.0" layoutX="566.0" layoutY="308.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Circle fx:id="bol" fill="#1fff79" layoutX="300.0" layoutY="200.0" onKeyPressed="#startBol" radius="16.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button layoutX="274.0" layoutY="322.0" mnemonicParsing="false" onKeyPressed="#startBol" text="Button" />
+   </children>
+</Pane>
