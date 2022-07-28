@@ -117,7 +117,7 @@ public class Pong extends Application {
             ballYSpeed += 1 * Math.signum(ballYSpeed);
             ballXSpeed += 1 * Math.signum(ballXSpeed);
             ballXSpeed *= -1;
-            ballYSpeed *= -1;
+            //ballYSpeed *= -1;
         }
 
         //draw scope
