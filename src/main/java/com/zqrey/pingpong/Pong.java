@@ -70,10 +70,10 @@ public class Pong extends Application {
             ballYPos += ballYSpeed;
 
             //computer
-            if (ballXPos < width - width / 4) {
+            if (ballXPos != playerTwoXPos) { //  < width - width / 4
                 playerTwoYPos = ballYPos - PLAYER_HEIGHT / 2;
             } else {
-                playerTwoYPos = ballYPos > playerTwoYPos + PLAYER_HEIGHT / 2 ? playerTwoYPos += 1 : playerTwoYPos - 1;
+                playerTwoYPos = ballYPos > playerTwoYPos + PLAYER_HEIGHT / 2 ? playerTwoYPos + 1 : playerTwoYPos - 1;
             }
 
             //draw ball
